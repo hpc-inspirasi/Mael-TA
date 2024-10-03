@@ -155,7 +155,9 @@ class OPT_RL_Anomaly():
         list_pred_models = []
         list_thresholds = []
 
-        model_path = os.path.join("./checkpoints/",setting)
+        model_path = os.path.join("checkpoints/",setting)
+        print("Model path: ")
+        print(model_path)
         model_list = [checkpoint for checkpoint in sorted(os.listdir(model_path))]
 
         for index in trange(len(model_list), desc=f'[Opt Anomaly]'):
@@ -163,7 +165,7 @@ class OPT_RL_Anomaly():
                 model_name = model_list[index].split("checkpoint_")[1].split(".")[0].split("slow_learner_")[1]
                 self.model = self.model_dict[model_name].Model(self.args).float().to(self.device)
 
-                model_load_state = torch.load(os.path.join("./checkpoints/",setting,model_list[index]))
+                model_load_state = torch.load(os.path.join("checkpoints/",setting,model_list[index]))
                 self.model.load_state_dict(model_load_state)
                 temperature = 50 #For Association discrepancy
 

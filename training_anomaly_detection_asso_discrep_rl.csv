@@ -62,3 +62,9 @@ Precision RL,Recall RL,F1-score RL,Reward RL
 MaelNetS2_AnomalyTransformer_DCDetector_RL_TA_SMD_ftM_dm512_nh8_el3_dl1_df512_fc5_ebtimeF_dtTrue
 Precision RL,Recall RL,F1-score RL,Reward RL
 0.8804890705065836,0.9220554272517321,0.9007929924682305,0.01
+MaelNetS2_AnomalyTransformer_DCDetector_RL_TA_MSL_ftM_dm512_nh8_el3_dl1_df512_fc5_ebtimeF_dtTrue
+Precision RL,Recall RL,F1-score RL,Reward RL
+MaelNetS2_AnomalyTransformer_DCDetector_RL_TA_MSL_ftM_dm512_nh8_el3_dl1_df512_fc5_ebtimeF_dtTrue
+Precision RL,Recall RL,F1-score RL,Reward RL
+MaelNetS2_AnomalyTransformer_DCDetector_RL_TA_MSL_ftM_dm512_nh8_el3_dl1_df512_fc5_ebtimeF_dtTrue
+Precision RL,Recall RL,F1-score RL,Reward RL

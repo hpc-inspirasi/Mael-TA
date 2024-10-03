@@ -22,7 +22,7 @@ parser.add_argument('--win_size', type=int, default=100, help='window size')
 parser.add_argument('--features', type=str, default='M',
                     help='forecasting task, options:[M, S, MS]; M:multivariate predict multivariate, S:univariate predict univariate, MS:multivariate predict univariate')
 parser.add_argument('--target', type=str, default='OT', help='target feature in S or MS task')
-parser.add_argument('--checkpoints', type=str, default='./checkpoints/', help='location of model checkpoints')
+parser.add_argument('--checkpoints', type=str, default='checkpoints', help='location of model checkpoints')
 parser.add_argument('--freq', type=str, default='h',
                         help='freq for time features encoding, options:[s:secondly, t:minutely, h:hourly, d:daily, b:business days, w:weekly, m:monthly], you can also use more detailed freq like 15min or 3h')
 
@@ -160,6 +160,7 @@ if __name__ == "__main__":
     exp_normal = Exp_Normal(args)  # set experiments
     exp_sl = Exp_SL(args)
     opt_rl = OPT_RL(args)
+    print("Setting: ", setting, "\n")
     if args.is_training:
         print('>>>>>>>start training : {}>>>>>>>>>>>>>>>>>>>>>>>>>>'.format(setting))
         if args.is_slow_learner:
